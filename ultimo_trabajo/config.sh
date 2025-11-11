@@ -3,8 +3,8 @@
 # Salir si hay errores
 set -e
 
-PROJECT_NAME="fastapi-app"
-APP_DIR="/home/ubuntu/$PROJECT_NAME"
+PROJECT_NAME="spc-final-final"
+APP_DIR="/home/ubuntu/$PROJECT_NAME/ultimo_trabajo"
 SYSTEMD_PATH="/etc/systemd/system/fastapi.service"
 CONDA_ENV_NAME="fastapi-taller"
 SERVICE_FILE="$APP_DIR/fastapi.service"

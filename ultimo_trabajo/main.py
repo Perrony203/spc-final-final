@@ -22,7 +22,7 @@ class Item(BaseModel):
     edad: int = Field(..., ge=16, le=85)
     altura: int = Field(..., ge=100, le=220) 
 
-@app.get("/items/", response_model=list[ItemResponse])
+@app.get("/items/")
 def read_items():
     obj = s3.get_object(Bucket=os.getenv("S3_BUCKET"), Key="persona.csv")
     csv_content = obj["Body"].read().decode("utf-8")
